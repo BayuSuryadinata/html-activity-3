@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 1px solid;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: yellow;
+        }
+
+        th, td {
+            border: 1px solid;
+            padding: 3px 2px;
+        }
+        
+        .btn {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Produk</h1>
+
+        <div class="btn">
+            <button>Tambah</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Barang</th>
+                    <th>Kode Barang</th>
+                    <th>Tanggal Masuk</th>
+                    <th>Tanggal Expired</th>
+                    <th>Jumlah Stock</th>
+                    <th>Harga Beli</th>
+                    <th>Harga Jual</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Indomie</td>
+                    <td>SLO5YR445K</td>
+                    <td>05/09/2024</td>
+                    <td>01/12/2026</td>
+                    <td>500</td>
+                    <td>4000</td>
+                    <td>5000</td>
+                    <td>
+                        <div class="btn">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

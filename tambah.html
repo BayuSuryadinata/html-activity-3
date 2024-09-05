@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid;
+            border-radius: 20px;
+            background-image: url(webBg.webp);
+            color: floralwhite;
+            background-position: center; /* Menempatkan gambar di tengah elemen */
+            background-repeat: no-repeat; /* Mencegah gambar diulang */
+        }
+
+        .judul-1 {
+            text-align: center;
+        }
+        .container-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .item-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            text-align: right;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: border-color 0.3s;
+            background-color: transparent;
+        }
+
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        input:hover {
+            background-color: #e0e0e0;
+        }
+
+        input::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #007BFF; /* Warna latar belakang tombol */
+            border: none;
+            border-radius: 8px; /* Sudut melengkung */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Transisi halus */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Warna latar belakang saat hover */
+            transform: scale(1.05); /* Efek pembesaran saat hover */
+        }
+
+        button:focus {
+            outline: none; /* Menghapus outline default saat fokus */
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Menambahkan bayangan fokus */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <h1 class="judul-1">Tambah Barang</h1>
+        <div class="container-form">
+            <div class="item-flex">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+    
+            <div class="item-flex">
+                <label for="kode">Kode</label>
+                <input type="text" name="kode" id="kode">
+            </div>
+
+            <div class="item-flex">
+                <label for="tm">Tanggal Masuk</label>
+                <input type="date" name="tm" id="tm">
+            </div>
+
+            <div class="item-flex">
+                <label for="tx">Tanggal expired</label>
+                <input type="date" name="tx" id="tx">
+            </div>
+             
+            <div class="item-flex">
+                <label for="jmls">Jumlah Stock</label>
+                <input type="number" name="jmls" id="jmls">
+            </div>
+
+            <div class="item-flex">
+                <label for="hb">Harga Beli</label>
+                <input type="number" name="hb" id="hb" step="0.01" min="0">
+            </div>
+
+            <div class="item-flex">
+                <label for="hj">Harga Jual</label>
+                <input type="number" name="hj" id="hj" step="0.01" min="0">
+            </div>
+
+            <div class="button">
+                <button>Simpan</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
